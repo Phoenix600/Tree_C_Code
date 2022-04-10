@@ -10,7 +10,7 @@ Other linear data structures like arrays, Linked lists, Queues, and Stacks store
 
 Different Tree data structures allow quicker and easier access to the data as it is a non-linear data structure.
 
-### Tree Terminologies
+## Tree Terminologies
 
 | Node | A node is an entity that contains a key or value and pointer to its child. |
 | --- | --- |
@@ -26,7 +26,7 @@ Different Tree data structures allow quicker and easier access to the data as it
 
 ![](https://www.delftstack.com/img/Python/structure%20of%20a%20tree%20in%20python.png?ezimgfmt=rs:372x210/rscb5/ng:webp/ngcb5)
 
-### Types Of Tree
+## Types Of Tree
 
   1. Binary Tree
 
@@ -36,7 +36,7 @@ Different Tree data structures allow quicker and easier access to the data as it
 
     4. B-Tree
 
-### Tree Applications
+## Tree Applications
 
 - Heap is a kind of tree that is used for heap sort.
   
@@ -47,42 +47,43 @@ Different Tree data structures allow quicker and easier access to the data as it
 - Used in compilers to validate the syntax.
   
 
-This is how define a node for tree
+## Tree Node Code Snippet
+
+This is how to define a node for a tree
 
 ```cpp
 struct node {
-	int key;
-	struct node* left;
-	struct node* right;
+    int key;
+    struct node* left;
+    struct node* right;
 };
 ```
 
-### Traverse Tree
+## Traverse Tree
 
 There are 3 ways to traverse a tree :
 
 1. Inorder
   
   1. In this traversing method left->root->right node visited
-    
 2. preorder
   
   1. In this traversing method root->left->right node visited
-    
 3. postorder
   
   1. In this traversing method left->right->root node visited
-    
+
+## Code Snippets
 
 ### Inorder Traversing
 
 ```cpp
 void inorder(struct node* root)
 {
-	if(root==NULL) return;
-	inorder(root->left);
-	printf("%d->",root->key);
-	inorder(root->right);
+    if(root==NULL) return;
+    inorder(root->left);
+    printf("%d->",root->key);
+    inorder(root->right);
 
 }
 ```
@@ -92,10 +93,10 @@ void inorder(struct node* root)
 ```cpp
 void preorder(struct node* root)
 {
-	if(root==NULL) return;
-	printf("%d->",root->key);
-	preorder(root->left);
-	preorder(root->right);
+    if(root==NULL) return;
+    printf("%d->",root->key);
+    preorder(root->left);
+    preorder(root->right);
 }
 ```
 
@@ -104,10 +105,9 @@ void preorder(struct node* root)
 ```cpp
 void postorder(struct node* root)
 {
-	if(root==NULL) return;
-	postorder(root->left);
-	postorder(root->right);
-	printf("%d->",root->key);
+    if(root==NULL) return;
+    postorder(root->left);
+    postorder(root->right);
+    printf("%d->",root->key);
 }
-
 ```
