@@ -1,16 +1,16 @@
 # Getting Started With Tree Data Structure
 
-The tree is a non-linear hierarchical data structure where data is stored in a non-linear pattern or non-linear logical pattern.
+The **tree** is a non-linear hierarchical data structure where data is stored in a non-linear pattern or non-linear logical pattern.
 
 The tree consists of nodes and edges, all nodes in the tree are connected via Edges
 
-## Why Tree Data Structure
+# Why Tree Data Structure?
 
 Other linear data structures like arrays, Linked lists, Queues, and Stacks store data sequentially, To perform any operations in a linear data structure, the time complexity increases as the size of data increases, and it's kinda not accepted in today's fast computational world.
 
 Different Tree data structures allow quicker and easier access to the data as it is a non-linear data structure.
 
-## Tree Terminologies
+# Tree Terminologies
 
 | Node | A node is an entity that contains a key or value and pointer to its child. |
 | --- | --- |
@@ -26,7 +26,7 @@ Different Tree data structures allow quicker and easier access to the data as it
 
 ![](https://www.delftstack.com/img/Python/structure%20of%20a%20tree%20in%20python.png?ezimgfmt=rs:372x210/rscb5/ng:webp/ngcb5)
 
-## Types Of Tree
+# Types Of Tree
 
   1. Binary Tree
 
@@ -36,7 +36,7 @@ Different Tree data structures allow quicker and easier access to the data as it
 
     4. B-Tree
 
-## Tree Applications
+# Tree Applications
 
 - Heap is a kind of tree that is used for heap sort.
   
@@ -47,19 +47,7 @@ Different Tree data structures allow quicker and easier access to the data as it
 - Used in compilers to validate the syntax.
   
 
-## Tree Node Code Snippet
-
-This is how to define a node for a tree
-
-```cpp
-struct node {
-    int key;
-    struct node* left;
-    struct node* right;
-};
-```
-
-## Traverse Tree
+# Tree Travesal
 
 There are 3 ways to traverse a tree :
 
@@ -74,6 +62,18 @@ There are 3 ways to traverse a tree :
   1. In this traversing method left->right->root node visited
 
 ## Code Snippets
+
+### Create Node
+
+````cpp
+```cpp
+struct node {
+    int key;
+    struct node* left;
+    struct node* right;
+};
+```
+````
 
 ### Inorder Traversing
 
