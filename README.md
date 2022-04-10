@@ -8,3 +8,4 @@ The tree consists of nodes and edges, all nodes in the tree are connected via Ed
 
 Other linear data structures like arrays, Linked lists, Queues, and Stacks store data sequentially, In order to perform any operations in a linear data structure, the time complexity increases as the size of data increases, and it's kinda not accepted in today's fast computational world.
 
+![](https://www.delftstack.com/img/Python/structure%20of%20a%20tree%20in%20python.png?ezimgfmt=rs:372x210/rscb5/ng:webp/ngcb5)
