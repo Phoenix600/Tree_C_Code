@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+// Tree Traversal
 // Node modifed for tree data structure 
 struct node {
 	int key;
