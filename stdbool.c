@@ -3,6 +3,7 @@
 
 int main()
 {
+	// You can literally use boolean data type in C also
 	bool X = true;
 	printf("%d\n",X);
 	bool Y = false;
