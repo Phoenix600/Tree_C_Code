@@ -55,6 +55,10 @@ int main()
 	//printf("%d",root->key);
 	insertLeft(root,6);
 	insertRight(root,3);
+	insertRight(root->left,69);
+	insertLeft(root->left,70);
+	insertLeft(root->right,89);
+	insertRight(root->right,90);
 	inorder(root);
 	return 0;
 }
