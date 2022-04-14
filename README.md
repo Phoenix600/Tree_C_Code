@@ -72,9 +72,9 @@ struct node {
     struct node* left;
     struct node* right;
 };
-```
 ````
 
+````
 ### Inorder Traversing
 
 ```cpp
@@ -86,7 +86,7 @@ void inorder(struct node* root)
     inorder(root->right);
 
 }
-```
+````
 
 ### Preorder Traversing
 
@@ -111,3 +111,95 @@ void postorder(struct node* root)
     printf("%d->",root->key);
 }
 ```
+
+# Types of Tree
+
+## Binary Tree
+
+A binary tree is a data structure in which each parent node can have at most two children.
+
+Each node of binary tree consists of three items :
+
+1. Data item
+  
+2. Address of the left child
+  
+3. Address of the right child
+  
+
+### Types of Binary Tree
+
+1. Full Binary Tree
+  
+  - A full binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.
+
+2. Perfect Binary Tree
+  
+  - A perfect binary tree is a special type of tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.
+3. Complete Binary Tree
+  
+  A complete binary tree is just like a full binary tree, but with two major differences :
+  
+  - Every level must be completely filled
+    
+  - All the leaf elements must lean towards the left
+    
+  - The last leaf elements might not have a right siblings
+    
+
+4. Degenrate Tree or Pathological Tree
+  
+  -    Degenrate tree or pathological tree is the tree having a single child either left     or right.
+5. Skewed Binary Tree
+  
+  - A skewed binary tree is pathological/degenerate tree in which the tree is either dominated by the left nodes or right nodes.
+    
+  - Thus there are two types of skewed binary tree
+    
+    - Left-skewed binary tree
+      
+    - right-skewed binary tree
+      
+6. Balanced Binary Tree
+  
+  - It's a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1
+
+## Binary Tree Representation
+
+A node of binary tree is represented by structure containing data part and two pointer to other strucutre of the same type.
+
+```cpp
+struct node
+{
+    int data;
+    struct node* left;
+    struct node* right;
+};
+```
+
+### Full Binary Tree
+
+A full binary tree is a special type of binary tree in which parent node/ internal node has either two children or no children.
+
+### Full Binary Tree Theorems
+
+```cpp
+int i = the number of internal nodes;
+int n = be the total number of nodes;
+int l = number of leaves 
+int lev = total number of levels
+```
+
+The number of leaves                         :         i +1
+
+The total number of nodes                 :        2i + 1
+
+The total number internal nodes       :        (n-1) / 2
+
+The number of leaves                           :        (n % 1 )/ 2
+
+The total number of nodes                  :        2l-1
+
+The number of internal nodes            :        l - 1
+
+The numbr of leaves at most              :        2^(lev-1)
